@@ -35,11 +35,11 @@ medicine_list = list(medicine_data.keys())
 # LOAD OCR MODEL
 
 processor = TrOCRProcessor.from_pretrained(
-    "microsoft/trocr-base-handwritten"
+    "microsoft/trocr-small-handwritten"
 )
 
 model = VisionEncoderDecoderModel.from_pretrained(
-    "microsoft/trocr-base-handwritten"
+    "microsoft/trocr-small-handwritten"
 )
 
 # UPLOAD FOLDER
